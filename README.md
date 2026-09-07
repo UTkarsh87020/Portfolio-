@@ -68,8 +68,8 @@ Hi, I'm **Utkarsh Rai** — a Computer Science graduate with hands-on experience
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/UTkarsh87020/portfolio.git
-   cd portfolio
+   git clone https://github.com/UTkarsh87020/Portfolio-.git
+   cd Portfolio-
    ```
 
 2. **Install dependencies**:
