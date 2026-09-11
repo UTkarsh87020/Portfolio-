@@ -1,16 +1,18 @@
 'use client';
 import ArrowAnimation from '@/components/ArrowAnimation';
-import Button from '@/components/Button';
+import ContactModal from '@/components/ContactModal';
 import { GENERAL_INFO } from '@/lib/data';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import React from 'react';
+import { FileText } from 'lucide-react';
+import React, { useState } from 'react';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const Banner = () => {
     const containerRef = React.useRef<HTMLDivElement>(null);
+    const [isContactOpen, setIsContactOpen] = useState(false);
 
     // move the content a little up on scroll
     useGSAP(
@@ -52,50 +54,58 @@ const Banner = () => {
                         </span>
                         . A Computer Science undergraduate with hands-on full-stack web development and database engineering experience.
                     </p>
-                    <Button
-                        as="link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={GENERAL_INFO.upworkProfile}
-                        variant="primary"
-                        className="mt-9 banner-button slide-up-and-fade"
-                    >
-                        Let&apos;s Talk
-                    </Button>
 
-                    <div className="flex items-center gap-2 mt-3">
-                        <span className="size-3 rounded-full bg-white"></span>
+                    <div className="flex flex-wrap items-center gap-4 mt-8 slide-up-and-fade">
+                        <button
+                            type="button"
+                            onClick={() => setIsContactOpen(true)}
+                            className="px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold hover:bg-primary-hover transition-all inline-flex items-center gap-2 cursor-pointer shadow-lg shadow-primary/20 hover:scale-[1.02]"
+                        >
+                            Let&apos;s Talk
+                        </button>
+                        <a
+                            href={GENERAL_INFO.resume || '/Utkarsh_Rai_Resume.pdf'}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-7 py-3.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:bg-neutral-800 text-white font-medium transition-all inline-flex items-center gap-2 group backdrop-blur-sm hover:scale-[1.02]"
+                        >
+                            <FileText size={18} className="text-primary group-hover:scale-110 transition-transform" />
+                            Resume
+                        </a>
+                    </div>
+
+                    <div className="flex items-center gap-2 mt-4 slide-up-and-fade">
+                        <span className="size-3 rounded-full bg-primary animate-pulse"></span>
                         <span className="text-sm text-muted-foreground">
                             Available for full-time opportunities
                         </span>
                     </div>
                 </div>
 
-                <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-8 text-center md:text-right">
-                    <div className="slide-up-and-fade">
-                        <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            2+
-                        </h5>
-                        <p className="text-muted-foreground">
-                            Years of Experience
-                        </p>
-                    </div>
-                    <div className="slide-up-and-fade">
-                        <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            2+
-                        </h5>
-                        <p className="text-muted-foreground">
-                            Completed Projects
-                        </p>
-                    </div>
-                    <div className="slide-up-and-fade">
-                        <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            6+
-                        </h5>
-                        <p className="text-muted-foreground">Hours Worked</p>
+                <div className="md:absolute bottom-[10%] right-[4%] max-md:mt-6 slide-up-and-fade">
+                    <div className="flex items-center gap-5 sm:gap-8 pt-4 px-6 py-4 rounded-2xl bg-background-light/40 border border-border/60 backdrop-blur-sm">
+                        <div>
+                            <h3 className="text-3xl sm:text-4xl font-anton tracking-wide text-white">2+</h3>
+                            <p className="text-xs uppercase tracking-widest text-neutral-400">Years Experience</p>
+                        </div>
+                        <div className="h-8 w-[1px] bg-neutral-800" />
+                        <div>
+                            <h3 className="text-3xl sm:text-4xl font-anton tracking-wide text-white">15+</h3>
+                            <p className="text-xs uppercase tracking-widest text-neutral-400">Completed Projects</p>
+                        </div>
+                        <div className="h-8 w-[1px] bg-neutral-800" />
+                        <div>
+                            <h3 className="text-3xl sm:text-4xl font-anton tracking-wide text-white">300+</h3>
+                            <p className="text-xs uppercase tracking-widest text-neutral-400">Git Commits</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <ContactModal
+                isOpen={isContactOpen}
+                onClose={() => setIsContactOpen(false)}
+            />
         </section>
     );
 };

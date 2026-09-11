@@ -10,6 +10,7 @@ const COLORS = [
     'bg-blue-500 text-white',
     'bg-teal-500 text-black',
     'bg-indigo-500 text-white',
+    'bg-primary text-primary-foreground',
 ];
 
 const MENU_LINKS = [
@@ -28,6 +29,11 @@ const MENU_LINKS = [
     {
         name: 'Projects',
         url: '/#selected-projects',
+    },
+    {
+        name: 'Resume',
+        url: '/Utkarsh_Rai_Resume.pdf',
+        isExternal: true,
     },
 ];
 
@@ -119,26 +125,49 @@ const Navbar = () => {
                             <ul className="space-y-3">
                                 {MENU_LINKS.map((link, idx) => (
                                     <li key={link.name}>
-                                        <button
-                                            onClick={() => {
-                                                router.push(link.url);
-                                                setIsMenuOpen(false);
-                                            }}
-                                            className="group text-xl flex items-center gap-3"
-                                        >
-                                            <span
-                                                className={cn(
-                                                    'size-3.5 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-[200%] transition-all',
-                                                    COLORS[idx],
-                                                )}
+                                        {link.isExternal ? (
+                                            <a
+                                                href={link.url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                onClick={() => setIsMenuOpen(false)}
+                                                className="group text-xl flex items-center gap-3"
                                             >
-                                                <MoveUpRight
-                                                    size={8}
-                                                    className="scale-0 group-hover:scale-100 transition-all"
-                                                />
-                                            </span>
-                                            {link.name}
-                                        </button>
+                                                <span
+                                                    className={cn(
+                                                        'size-3.5 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-[200%] transition-all',
+                                                        COLORS[idx],
+                                                    )}
+                                                >
+                                                    <MoveUpRight
+                                                        size={8}
+                                                        className="scale-0 group-hover:scale-100 transition-all"
+                                                    />
+                                                </span>
+                                                {link.name}
+                                            </a>
+                                        ) : (
+                                            <button
+                                                onClick={() => {
+                                                    router.push(link.url);
+                                                    setIsMenuOpen(false);
+                                                }}
+                                                className="group text-xl flex items-center gap-3"
+                                            >
+                                                <span
+                                                    className={cn(
+                                                        'size-3.5 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-[200%] transition-all',
+                                                        COLORS[idx],
+                                                    )}
+                                                >
+                                                    <MoveUpRight
+                                                        size={8}
+                                                        className="scale-0 group-hover:scale-100 transition-all"
+                                                    />
+                                                </span>
+                                                {link.name}
+                                            </button>
+                                        )}
                                     </li>
                                 ))}
                             </ul>

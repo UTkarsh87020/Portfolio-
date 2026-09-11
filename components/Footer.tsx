@@ -20,10 +20,10 @@ const Footer = async () => {
             },
         );
         if (repoStats.ok) {
-            const repos = await repoStats.json();
+            const repos: RepoStats[] = await repoStats.json();
             if (Array.isArray(repos)) {
-                stargazers_count = repos.reduce((acc: number, r: any) => acc + (r.stargazers_count || 0), 0);
-                forks_count = repos.reduce((acc: number, r: any) => acc + (r.forks_count || 0), 0);
+                stargazers_count = repos.reduce((acc, r) => acc + (r.stargazers_count || 0), 0);
+                forks_count = repos.reduce((acc, r) => acc + (r.forks_count || 0), 0);
             }
         }
     } catch {
@@ -41,7 +41,7 @@ const Footer = async () => {
                     {GENERAL_INFO.email}
                 </a>
 
-                <div className="">
+                <div>
                     <a
                         href="https://github.com/UTkarsh87020"
                         target="_blank"
@@ -57,21 +57,6 @@ const Footer = async () => {
                             </span>
                         </div>
                     </a>
-
-                    {/* Note: If you are not Tajmirul, use this copyright message instead */}
-                    {/* <a href='https://www.me.toinfinite.dev/' className="leading-none text-muted-foreground hover:underline hover:text-white">
-                        Design & built by Tajmirul Islam <br />
-                        Revised by YOUR NAME
-
-                        <div className="flex items-center justify-center gap-5 pt-1">
-                            <span className='flex items-center gap-2'>
-                                <Star size={14} /> {stargazers_count}
-                            </span>
-                            <span className='flex items-center gap-2'>
-                                <GitFork size={14} /> {forks_count}
-                            </span>
-                        </div>
-                    </a> */}
                 </div>
             </div>
         </footer>

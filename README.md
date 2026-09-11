@@ -93,7 +93,7 @@ Hi, I'm **Utkarsh Rai** — a Computer Science graduate with hands-on experience
 
 ---
 
-## 📄 License & Credits
+## 📄 License
 
 - **License**: Released under the [MIT License](LICENSE).
-- **Design Credits**: Originally inspired and adapted from [Tajmirul Islam's Portfolio](https://github.com/Tajmirul/portfolio-2.0).
+
