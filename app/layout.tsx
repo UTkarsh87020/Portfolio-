@@ -29,7 +29,7 @@ const robotoFlex = Roboto_Flex({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://portfolioutkarshraiengg.netlify.app'),
+    metadataBase: new URL('https://utkarshraiengg.netlify.app'),
     title: {
         default: 'Utkarsh Rai | Full-Stack Software Engineer & Web Developer',
         template: '%s | Utkarsh Rai',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://portfolioutkarshraiengg.netlify.app',
+        url: 'https://utkarshraiengg.netlify.app',
         title: 'Utkarsh Rai | Full-Stack Software Engineer & Web Developer',
         description:
             'Explore selected full-stack projects, autonomous logistics telemetry, software engineering experience, and technical stack of Utkarsh Rai.',

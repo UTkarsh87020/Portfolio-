@@ -26,7 +26,7 @@ export const generateMetadata = async ({
             title: `${project.title} | Utkarsh Rai`,
             description: project.description,
             type: 'article',
-            url: `https://utkarshrai.devpro/projects/${project.slug}`,
+            url: `https://utkarshraiengg.netlify.app/projects/${project.slug}`,
             images: [
                 {
                     url: project.thumbnail,

@@ -48,7 +48,7 @@ const Banner = () => {
                         <br /> <span className="ml-4">DEVELOPER</span>
                     </h1>
                     <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground">
-                        Hi I&apos;m{' '}
+                        I&apos;m{' '}
                         <span className="font-medium text-foreground">
                             Utkarsh Rai
                         </span>
