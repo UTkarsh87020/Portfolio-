@@ -56,7 +56,7 @@ export const PROJECTS: IProject[] = [
             '/projects/images/bharat-express-3.png',
         ],
         sourceCode: 'https://github.com/UTkarsh87020/Bharat_Express',
-        liveUrl: 'https://github.com/UTkarsh87020/Bharat_Express',
+        liveUrl: 'https://bharat-express.onrender.com/',
         description: 'Smart logistics control room and multi-city spatial telemetry hub featuring ESRI dark canvas cartography, multi-objective AI route optimization, customer safe-route locks, and 1-click Delhi Police SOS emergency dispatch.',
         role: 'Architected and engineered the logistics control room. Implemented multi-objective AI route optimization (Nearest-Neighbor, EDF Time-Window, Monsoon Hazard K-Means), custom HTML5 Canvas hardware telemetry gauges, and responsive multi-device dispatch workflows.',
     },

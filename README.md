@@ -46,6 +46,7 @@ Hi, I'm **Utkarsh Rai** — a Computer Science undergraduate who enjoys building
   <img src="./public/projects/thumbnail/bharat-express.png" alt="Bharat Express Control Room Preview" width="100%" />
 </p>
 
+- **Live Demo**: [bharat-express.onrender.com](https://bharat-express.onrender.com/)
 - **Repository**: [UTkarsh87020/Bharat_Express](https://github.com/UTkarsh87020/Bharat_Express)
 - **Tech Stack**: Node.js, Express.js, Leaflet.js, ESRI Dark Canvas, JavaScript (ES6+), HTML5/CSS3, REST APIs
 - **Key Highlights**:
