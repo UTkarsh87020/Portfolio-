@@ -1,4 +1,4 @@
-import { IProject } from '@/types';
+import { IAchievement, ICertificate, IExperience, IProject } from '@/types';
 
 export const GENERAL_INFO = {
     email: 'utk87020@gmail.com',
@@ -57,21 +57,86 @@ export const PROJECTS: IProject[] = [
         role: 'Architected and delivered the full-stack platform solo within 6 weeks. Engineered route optimization using Nearest Neighbor Heuristic, Time-Window Constraint Scheduling, and a custom Hybrid Model.',
     },
     {
-        title: 'Dynamic Music Player Web App',
-        slug: 'dynamic-music-player',
+        title: 'MoodTunes — Music App',
+        slug: 'moodtunes',
         year: 2025,
-        techStack: ['HTML5', 'CSS3', 'Vanilla JavaScript'],
-        thumbnail: '/projects/thumbnail/dynamic-music-player.jpg',
-        longThumbnail: '/projects/long/dynamic-music-player.jpg',
-        images: ['/projects/images/dynamic-music-player-1.jpg'],
-        sourceCode: 'https://github.com/UTkarsh87020',
-        liveUrl: 'https://github.com/UTkarsh87020',
-        description: 'Browser-native music player with play, pause, skip, seek, and progress controls, built with pure JavaScript DOM manipulation.',
-        role: 'Designed a mobile-first responsive interface across mobile, tablet, and desktop breakpoints, with optimized event handling and smooth transitions.',
+        techStack: ['React 18', 'Vite', 'Node.js', 'Express.js', 'Context API', 'iTunes API'],
+        thumbnail: '/projects/thumbnail/moodtunes.png',
+        longThumbnail: '/projects/long/moodtunes.png',
+        images: [
+            '/projects/images/moodtunes-1.png',
+            '/projects/images/moodtunes-2.png',
+            '/projects/images/moodtunes-3.png',
+            '/projects/images/moodtunes-4.png',
+        ],
+        sourceCode: 'https://github.com/UTkarsh87020/MoodTunes',
+        liveUrl: 'https://moodtunes-lipx.onrender.com/',
+        description: 'Full-stack music streaming platform that analyzes user mood and sentiment from plain text using a localized NLP scoring engine to deliver dynamically matched soundtracks and real-time audio previews.',
+        role: 'Built responsive glassmorphism UI with 3 themes, interactive persistent player with draggable queue, and localized sentiment scoring engine.',
     },
 ];
 
-export const MY_EXPERIENCE = [
-    { title: 'Web Development Intern', company: 'Mecatredz Technology', duration: 'Dec 2021 - Apr 2022' },
-    { title: 'Database Management Intern', company: 'Reckon Software', duration: 'Sep 2022 - Feb 2023' },
+export const MY_EXPERIENCE: IExperience[] = [
+    {
+        title: 'Web Development Intern',
+        company: 'Mecatredz Technology',
+        duration: 'Dec 2021 - Apr 2022',
+        points: [
+            'Developed interactive, fully responsive frontend components for live client facing websites using HTML5, CSS3, and JavaScript, directly improving cross device user experience.',
+            'Collaborated with senior engineers in Agile sprints to review, refactor, and modernize legacy codebases applying Git branching and pull request workflows throughout.',
+            'Gained practical SDLC exposure from requirements and design through code review, testing, and client aligned delivery in a professional agency environment.',
+        ],
+    },
+    {
+        title: 'Database Management Intern',
+        company: 'Reckon Software',
+        duration: 'Sep 2022 - Feb 2023',
+        points: [
+            'Designed and maintained production MySQL databases for core business applications, enforcing referential integrity across complex schemas.',
+            'Authored and tuned advanced SQL queries multi - table JOINs, correlated subqueries, and indexed lookups measurably reducing retrieval latency and improving application response times.',
+            'Documented schema structures and query patterns to support team knowledge transfer and streamline onboarding.',
+        ],
+    },
 ];
+
+export const CERTIFICATES: ICertificate[] = [
+    {
+        title: 'AWS Academy',
+        duration: 'January 2026 - March 2026',
+        pdf: 'cloud.pdf',
+        link: 'https://drive.google.com/file/d/1bbrga1yYiIMorYRIswnAyhsG3t04KIs5/view?usp=sharing',
+        points: [
+            'Developed an understanding of cloud infrastructure, deployment concepts, and AWS-based technologies through structured learning.',
+            'Strengthened technical problem-solving skills by exploring cloud-based application development and modern computing environments.',
+        ],
+    },
+    {
+        title: 'Java Full Stack Developer',
+        duration: 'October 2025 - December 2025',
+        pdf: 'java.pdf',
+        link: 'https://drive.google.com/file/d/1kp4yYtJrk03k5M1a_3DXJvGRFgZMHsWW/view?usp=sharing',
+        points: [
+            'Completed a 10-week Java Full Stack Developer internship, gaining practical exposure to full-stack application development.',
+            'Strengthened understanding of Java-based development and full-stack engineering workflows through structured technical training.',
+        ],
+    },
+];
+
+export const ACHIEVEMENTS: IAchievement[] = [
+    {
+        title: 'Innocodeathon',
+        year: 2024,
+        pdf: 'Innocodeathon.pdf',
+        link: 'https://drive.google.com/file/d/1Ck5uTgVJtgPHci9ZEHlt-NFNsVqthWof/view?usp=sharing',
+        points: [
+            'Worked as a Frontend Developer, building fully responsive web pages with a focus on clean UI, usability, and cross-device compatibility.',
+            'Collaborated with the team to integrate frontend components and deliver the project within the competition requirements.',
+            'Recognized for Outstanding Performance in the final round of InnoCodeathon 2024.',
+        ],
+    },
+];
+
+export const MY_CERTIFICATES = CERTIFICATES;
+export const MY_ACHIEVEMENTS = ACHIEVEMENTS;
+
+

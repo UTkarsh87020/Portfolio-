@@ -1,6 +1,6 @@
-﻿# 🚀 Utkarsh Rai — Portfolio Website
+# 🚀 Utkarsh Rai — Portfolio Website
 
-Welcome to my personal portfolio repository! This modern, responsive web application showcases my background, technical stack, featured projects, and software engineering experience.
+Welcome to my personal portfolio repository! This modern, responsive web application showcases my background, technical stack, featured projects, certifications, and software engineering experience.
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
@@ -13,9 +13,8 @@ Welcome to my personal portfolio repository! This modern, responsive web applica
 
 ## 👨‍💻 About Me
 
-Hi, I'm **Utkarsh Rai** — a Computer Science graduate with hands-on experience in full-stack web development, frontend design, and database engineering. I specialize in building responsive, performant web applications with clean architecture and modern animations.
+Hi, I'm **Utkarsh Rai** — a Computer Science undergraduate who enjoys building responsive, user-focused web applications and solving real-world problems through modern full-stack technologies. I specialize in frontend engineering, responsive design systems, RESTful backend services, and database optimization.
 
-- 🌐 **Portfolio**: [utkarshrai.devpro](https://utkarshrai.devpro)
 - 💼 **LinkedIn**: [linkedin.com/in/utkarsh1999rai](https://www.linkedin.com/in/utkarsh1999rai)
 - 🐙 **GitHub**: [github.com/UTkarsh87020](https://github.com/UTkarsh87020)
 - 📧 **Email**: [utk87020@gmail.com](mailto:utk87020@gmail.com)
@@ -44,19 +43,53 @@ Hi, I'm **Utkarsh Rai** — a Computer Science graduate with hands-on experience
 > AI-powered smart logistics platform with route optimization, customer order lifecycle management, driver dispatching, live tracking, and emergency route support.
 - **Repository**: [UTkarsh87020/FastTrack-Delivery](https://github.com/UTkarsh87020/FastTrack-Delivery)
 - **Tech Stack**: JavaScript (ES6+), Node.js, Express.js, HTML5/CSS3
-- **Highlights**: Nearest Neighbor & Time-Window route optimization algorithms with interactive dashboard.
+- **Highlights**: Nearest Neighbor Heuristic & Time-Window route optimization algorithms with interactive status dashboard.
 
-### 2. **Dynamic Music Player Web App**
-> Browser-native music player featuring play/pause/skip/seek controls, custom playlist handling, and audio wave animations.
-- **Tech Stack**: HTML5, CSS3, Vanilla JavaScript (ES6+)
-- **Highlights**: Responsive audio UI with smooth DOM event handling across mobile and desktop breakpoints.
+### 2. **MoodTunes — Mood-Based Music Streaming Web App**
+> Full-stack music streaming platform that analyzes user mood and sentiment from plain text using a localized NLP scoring engine to deliver dynamically matched soundtracks and real-time audio previews.
+
+<p align="center">
+  <img src="./public/projects/thumbnail/moodtunes.png" alt="MoodTunes Preview" width="100%" />
+</p>
+
+- **Live Demo**: [moodtunes-lipx.onrender.com](https://moodtunes-lipx.onrender.com/)
+- **Repository**: [UTkarsh87020/MoodTunes](https://github.com/UTkarsh87020/MoodTunes)
+- **Tech Stack**: React 18, Vite, Node.js, Express.js, React Context API, iTunes Search API, CSS Custom Properties
+- **Key Highlights**:
+  - **Sentiment & Mood Engine**: Real-time keyword scoring and sentiment mapping across English, Hindi, and Spanish to curate genre-specific music tracks.
+  - **Interactive Audio Player**: Persistent mini-player with drag-and-drop queue reordering, click-to-seek progress bar, volume controls, and audio wave visualizer.
+  - **Multi-Theme UI System**: 3 custom-crafted glassmorphism themes (*Antigravity Dark*, *Cloud Nine*, and *Neon Dreams*) with responsive layouts scaling from mobile to a 3-column desktop view.
 
 ---
 
 ## 💼 Work Experience
 
-- **Database Management Intern** — *Reckon Software* (Sep 2022 – Feb 2023)
-- **Web Development Intern** — *Mecatredz Technology* (Dec 2021 – Apr 2022)
+### **Database Management Intern** — *Reckon Software* (Sep 2022 – Feb 2023)
+- Designed and maintained production MySQL databases for core business applications, enforcing referential integrity across complex schemas.
+- Authored and tuned advanced SQL queries (multi-table JOINs, correlated subqueries, and indexed lookups), measurably reducing retrieval latency and improving application response times.
+- Documented schema structures and query patterns to support team knowledge transfer and streamline onboarding.
+
+### **Web Development Intern** — *Mecatredz Technology* (Dec 2021 – Apr 2022)
+- Developed interactive, fully responsive frontend components for live client-facing websites using HTML5, CSS3, and JavaScript, directly improving cross-device user experience.
+- Collaborated with senior engineers in Agile sprints to review, refactor, and modernize legacy codebases applying Git branching and pull request workflows throughout.
+- Gained practical SDLC exposure from requirements and design through code review, testing, and client-aligned delivery in a professional agency environment.
+
+---
+
+## 🏆 Certifications & Achievements
+
+### **AWS Academy — Cloud Virtual Internship** *(Jan 2026 – Mar 2026)*
+- Developed an understanding of cloud infrastructure, deployment concepts, and AWS-based technologies through structured learning.
+- Strengthened technical problem-solving skills by exploring cloud-based application development and modern computing environments.
+
+### **Java Full Stack Developer Virtual Internship** *(Oct 2025 – Dec 2025)*
+- Completed a 10-week Java Full Stack Developer internship, gaining practical exposure to full-stack application development.
+- Strengthened understanding of Java-based development and full-stack engineering workflows through structured technical training.
+
+### **Innocodeathon 2024 — Outstanding Performance Finalist** *(May 2024)*
+- Worked as a Frontend Developer, building fully responsive web pages with a focus on clean UI, usability, and cross-device compatibility.
+- Collaborated with team *AI Avengers* to integrate frontend components and deliver the project within competition requirements.
+- Recognized for Outstanding Performance in the final round of InnoCodeathon 2024 organized by ITS Engineering College.
 
 ---
 
@@ -69,29 +102,32 @@ Hi, I'm **Utkarsh Rai** — a Computer Science graduate with hands-on experience
 ### Installation & Setup
 
 1. **Clone the repository**:
-   `ash
+   ```bash
    git clone https://github.com/UTkarsh87020/Portfolio-.git
    cd Portfolio-
-   ``n
+   ```
+
 2. **Install dependencies**:
-   `ash
+   ```bash
    npm install --legacy-peer-deps
-   ``n
+   ```
+
 3. **Start the development server**:
-   `ash
+   ```bash
    npm run dev
-   ``n
+   ```
+
 4. **Open in browser**:
-   Navigate to [http://localhost:3000](http://localhost:3000) (or http://localhost:3001 if port 3000 is occupied).
+   Navigate to [http://localhost:3000](http://localhost:3000).
 
 5. **Build for production**:
-   `ash
+   ```bash
    npm run build
    npm start
-   ``n
+   ```
+
 ---
 
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
-

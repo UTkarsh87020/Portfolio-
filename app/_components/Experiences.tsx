@@ -68,8 +68,18 @@ const Experiences = () => {
                             <p className="text-lg text-muted-foreground">
                                 {item.duration}
                             </p>
+                            {item.points && item.points.length > 0 && (
+                                <ul className="mt-4 space-y-2 list-disc list-outside ml-5 text-muted-foreground max-w-3xl">
+                                    {item.points.map((point, index) => (
+                                        <li key={index} className="text-base md:text-lg leading-relaxed">
+                                            {point}
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
                         </div>
                     ))}
+
                 </div>
             </div>
         </section>

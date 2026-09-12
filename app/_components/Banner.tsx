@@ -48,11 +48,11 @@ const Banner = () => {
                         <br /> <span className="ml-4">DEVELOPER</span>
                     </h1>
                     <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground">
-                        Hi! I&apos;m{' '}
+                        Hi I&apos;m{' '}
                         <span className="font-medium text-foreground">
                             Utkarsh Rai
                         </span>
-                        . A Computer Science undergraduate with hands-on full-stack web development and database engineering experience.
+                        . A Computer Science undergraduate who enjoys building responsive, user-focused web applications and solving real-world problems through modern full-stack technologies.
                     </p>
 
                     <div className="flex flex-wrap items-center gap-4 mt-8 slide-up-and-fade">
@@ -82,21 +82,31 @@ const Banner = () => {
                     </div>
                 </div>
 
-                <div className="md:absolute bottom-[10%] right-[4%] max-md:mt-6 slide-up-and-fade">
-                    <div className="flex items-center gap-5 sm:gap-8 pt-4 px-6 py-4 rounded-2xl bg-background-light/40 border border-border/60 backdrop-blur-sm">
+                <div className="md:absolute bottom-[10%] right-[5%] max-md:mt-8 slide-up-and-fade">
+                    <div className="flex flex-col gap-6 sm:gap-7">
                         <div>
-                            <h3 className="text-3xl sm:text-4xl font-anton tracking-wide text-white">2+</h3>
-                            <p className="text-xs uppercase tracking-widest text-neutral-400">Years Experience</p>
+                            <h3 className="text-4xl sm:text-5xl font-anton tracking-wide text-white leading-none">
+                                2+
+                            </h3>
+                            <p className="text-xs uppercase tracking-widest text-neutral-400 mt-1">
+                                Years Experience
+                            </p>
                         </div>
-                        <div className="h-8 w-[1px] bg-neutral-800" />
                         <div>
-                            <h3 className="text-3xl sm:text-4xl font-anton tracking-wide text-white">15+</h3>
-                            <p className="text-xs uppercase tracking-widest text-neutral-400">Completed Projects</p>
+                            <h3 className="text-4xl sm:text-5xl font-anton tracking-wide text-white leading-none">
+                                10+
+                            </h3>
+                            <p className="text-xs uppercase tracking-widest text-neutral-400 mt-1">
+                                Completed Projects
+                            </p>
                         </div>
-                        <div className="h-8 w-[1px] bg-neutral-800" />
                         <div>
-                            <h3 className="text-3xl sm:text-4xl font-anton tracking-wide text-white">300+</h3>
-                            <p className="text-xs uppercase tracking-widest text-neutral-400">Git Commits</p>
+                            <h3 className="text-4xl sm:text-5xl font-anton tracking-wide text-white leading-none">
+                                300+
+                            </h3>
+                            <p className="text-xs uppercase tracking-widest text-neutral-400 mt-1">
+                                Git Commits
+                            </p>
                         </div>
                     </div>
                 </div>

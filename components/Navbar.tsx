@@ -27,6 +27,10 @@ const MENU_LINKS = [
         url: '/#my-experience',
     },
     {
+        name: 'Certificates',
+        url: '/#certificates',
+    },
+    {
         name: 'Projects',
         url: '/#selected-projects',
     },
