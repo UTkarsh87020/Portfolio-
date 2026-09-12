@@ -60,6 +60,16 @@ Hi, I'm **Utkarsh Rai** — a Computer Science undergraduate who enjoys building
   - **Interactive Audio Player**: Persistent mini-player with drag-and-drop queue reordering, click-to-seek progress bar, volume controls, and audio wave visualizer.
   - **Multi-Theme UI System**: 3 custom-crafted glassmorphism themes (*Antigravity Dark*, *Cloud Nine*, and *Neon Dreams*) with responsive layouts scaling from mobile to a 3-column desktop view.
 
+### 3. **Interactive GitHub Profile & Heatmap**
+> Automated, interactive GitHub profile featuring an animated jet contribution heatmap and a retro terminal ASCII dashboard.
+- **Repository**: [UTkarsh87020/UTkarsh87020](https://github.com/UTkarsh87020/UTkarsh87020)
+- **Tech Stack**: Node.js, SVG Animations, GitHub Actions, JavaScript, CSS Keyframes
+- **Key Highlights**:
+  - **Animated Jet Heatmap**: Space-jet animation navigating and illuminating live GitHub contribution cells.
+  - **Retro Terminal UI**: Cyber-style ASCII portrait and live developer stats with dark/light mode.
+  - **Automated CI/CD**: GitHub Actions workflow that automatically updates the heatmap SVG every few hours.
+  - **Pure Vector Scripts**: Lightweight SVG engine built with JavaScript (`generate.mjs`) and CSS keyframe animations.
+
 ---
 
 ## 💼 Work Experience

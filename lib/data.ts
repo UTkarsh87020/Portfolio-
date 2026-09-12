@@ -74,6 +74,19 @@ export const PROJECTS: IProject[] = [
         description: 'Full-stack music streaming platform that analyzes user mood and sentiment from plain text using a localized NLP scoring engine to deliver dynamically matched soundtracks and real-time audio previews.',
         role: 'Built responsive glassmorphism UI with 3 themes, interactive persistent player with draggable queue, and localized sentiment scoring engine.',
     },
+    {
+        title: 'Interactive GitHub Profile & Heatmap',
+        slug: 'github-interactive-profile',
+        year: 2026,
+        techStack: ['Node.js', 'SVG Animations', 'GitHub Actions', 'JavaScript', 'CSS'],
+        thumbnail: '/projects/thumbnail/github-profile.svg',
+        longThumbnail: '/projects/long/github-profile.svg',
+        images: ['/projects/images/github-profile-1.svg'],
+        sourceCode: 'https://github.com/UTkarsh87020/UTkarsh87020',
+        liveUrl: 'https://github.com/UTkarsh87020',
+        description: 'Automated, interactive GitHub profile featuring an animated jet contribution heatmap and a retro terminal ASCII dashboard.<br/><br/><strong>Key Highlights:</strong><ul><li><strong>🚀 Animated Jet Heatmap:</strong> Space-jet animation navigating and illuminating live GitHub contribution cells.</li><li><strong>💻 Retro Terminal UI:</strong> Cyber-style ASCII portrait and live developer stats with dark/light mode.</li><li><strong>⚡ Automated CI/CD:</strong> GitHub Actions workflow that automatically updates the heatmap SVG every few hours.</li><li><strong>🎨 Pure Vector Scripts:</strong> Lightweight SVG engine built with JavaScript (generate.mjs) and CSS keyframe animations.</li></ul>',
+        role: 'Designed the custom SVGs and built the automated CI/CD pipeline to dynamically update live GitHub metrics.',
+    },
 ];
 
 export const MY_EXPERIENCE: IExperience[] = [
