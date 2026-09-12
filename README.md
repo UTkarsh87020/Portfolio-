@@ -2,6 +2,7 @@
 
 Welcome to my personal portfolio repository! This modern, responsive web application showcases my background, technical stack, featured projects, certifications, and software engineering experience.
 
+[![Live Demo](https://img.shields.io/badge/Live_Site-portfolioutkarshraiengg.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://portfolioutkarshraiengg.netlify.app/)
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)
@@ -9,12 +10,15 @@ Welcome to my personal portfolio repository! This modern, responsive web applica
 ![GSAP](https://img.shields.io/badge/GSAP-Animation-green?style=for-the-badge&logo=greensock)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
+> 🌐 **Live Website**: [https://portfolioutkarshraiengg.netlify.app](https://portfolioutkarshraiengg.netlify.app/)
+
 ---
 
 ## 👨‍💻 About Me
 
 Hi, I'm **Utkarsh Rai** — a Computer Science undergraduate who enjoys building responsive, user-focused web applications and solving real-world problems through modern full-stack technologies. I specialize in frontend engineering, responsive design systems, RESTful backend services, and database optimization.
 
+- 🌐 **Live Portfolio**: [portfolioutkarshraiengg.netlify.app](https://portfolioutkarshraiengg.netlify.app/)
 - 💼 **LinkedIn**: [linkedin.com/in/utkarsh1999rai](https://www.linkedin.com/in/utkarsh1999rai)
 - 🐙 **GitHub**: [github.com/UTkarsh87020](https://github.com/UTkarsh87020)
 - 📧 **Email**: [utk87020@gmail.com](mailto:utk87020@gmail.com)
