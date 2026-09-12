@@ -37,14 +37,14 @@ const Experiences = () => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: containerRef.current,
-                    start: 'bottom 50%',
-                    end: 'bottom 20%',
+                    start: 'bottom 70%',
+                    end: 'bottom 10%',
                     scrub: 1,
                 },
             });
 
             tl.to(containerRef.current, {
-                y: -150,
+                y: -80,
                 opacity: 0,
             });
         },
@@ -52,11 +52,11 @@ const Experiences = () => {
     );
 
     return (
-        <section className="py-section" id="my-experience">
+        <section className="pt-section pb-16 md:pb-20" id="my-experience">
             <div className="container" ref={containerRef}>
                 <SectionTitle title="My Experience" />
 
-                <div className="grid gap-14">
+                <div className="grid gap-14 md:gap-16">
                     {MY_EXPERIENCE.map((item) => (
                         <div key={item.title} className="experience-item">
                             <p className="text-xl text-muted-foreground">
@@ -69,7 +69,7 @@ const Experiences = () => {
                                 {item.duration}
                             </p>
                             {item.points && item.points.length > 0 && (
-                                <ul className="mt-4 space-y-2 list-disc list-outside ml-5 text-muted-foreground max-w-3xl">
+                                <ul className="mt-4 space-y-2.5 list-disc list-outside ml-5 text-muted-foreground max-w-3xl">
                                     {item.points.map((point, index) => (
                                         <li key={index} className="text-base md:text-lg leading-relaxed">
                                             {point}

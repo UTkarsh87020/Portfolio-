@@ -71,10 +71,10 @@ const AboutMe = () => {
                     <div className="md:col-span-7">
                         <div className="text-lg text-muted-foreground max-w-[450px]">
                             <p className="slide-up-and-fade">
-                                I&apos;m a Computer Science undergraduate focused on frontend development, RESTful backend services, and database engineering.
+                                I'm a Computer Science undergraduate focused on frontend development, RESTful APIs, and database engineering.
                             </p>
                             <p className="mt-3 slide-up-and-fade">
-                                I enjoy building responsive interfaces, practical backend services, and data-driven solutions while continuously improving my skills.
+                                I enjoy turning ideas into responsive interfaces, reliable backend services, and practical data-driven solutions while continuously learning and refining my skills.
                             </p>
                         </div>
                     </div>

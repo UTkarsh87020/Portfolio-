@@ -17,17 +17,17 @@ const Certificates = () => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: containerRef.current,
-                    start: 'top 70%',
-                    end: 'bottom 60%',
+                    start: 'top 85%',
+                    end: 'bottom 70%',
                     toggleActions: 'restart none none reverse',
                     scrub: 1,
                 },
             });
 
             tl.from('.cert-item', {
-                y: 50,
+                y: 40,
                 opacity: 0,
-                stagger: 0.2,
+                stagger: 0.15,
             });
         },
         { scope: containerRef },
@@ -38,14 +38,14 @@ const Certificates = () => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: containerRef.current,
-                    start: 'bottom 50%',
-                    end: 'bottom 20%',
+                    start: 'bottom 70%',
+                    end: 'bottom 10%',
                     scrub: 1,
                 },
             });
 
             tl.to(containerRef.current, {
-                y: -100,
+                y: -80,
                 opacity: 0,
             });
         },
@@ -58,11 +58,11 @@ const Certificates = () => {
     };
 
     return (
-        <section className="py-section" id="certificates">
+        <section className="pt-16 md:pt-20 pb-section" id="certificates">
             <div className="container" ref={containerRef}>
                 <SectionTitle title="Certificates & Achievements" />
 
-                <div className="grid gap-14">
+                <div className="grid gap-14 md:gap-16">
                     {CERTIFICATES.map((item) => (
                         <div key={item.title} className="cert-item">
                             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
