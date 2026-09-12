@@ -58,10 +58,6 @@ const AboutMe = () => {
                     I focus on turning real user needs into clean, responsive, and intuitive interfaces, balancing usability, performance, and modern frontend practices
                 </h2>
 
-                <p className="pb-3 border-b text-muted-foreground slide-up-and-fade">
-                
-                </p>
-
                 <div className="grid md:grid-cols-12 mt-9">
                     <div className="md:col-span-5">
                         <p className="text-5xl slide-up-and-fade">
@@ -71,7 +67,7 @@ const AboutMe = () => {
                     <div className="md:col-span-7">
                         <div className="text-lg text-muted-foreground max-w-[450px]">
                             <p className="slide-up-and-fade">
-                                I'm a Computer Science undergraduate focused on frontend development, RESTful APIs, and database engineering.
+                                I&apos;m a Computer Science undergraduate focused on frontend development, RESTful APIs, and database engineering.
                             </p>
                             <p className="mt-3 slide-up-and-fade">
                                 I enjoy turning ideas into responsive interfaces, reliable backend services, and practical data-driven solutions while continuously learning and refining my skills.
