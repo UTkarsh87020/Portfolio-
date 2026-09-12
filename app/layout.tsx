@@ -29,8 +29,59 @@ const robotoFlex = Roboto_Flex({
 });
 
 export const metadata: Metadata = {
-    title: 'Portfolio - Utkarsh Rai',
-    description: 'Personal portfolio of Utkarsh Rai',
+    metadataBase: new URL('https://utkarshrai.devpro'),
+    title: {
+        default: 'Utkarsh Rai | Full-Stack Software Engineer & Web Developer',
+        template: '%s | Utkarsh Rai',
+    },
+    description:
+        'Personal portfolio of Utkarsh Rai — Computer Science Engineer specializing in modern full-stack web applications, autonomous logistics systems, React, Next.js, and Node.js.',
+    keywords: [
+        'Utkarsh Rai',
+        'Full Stack Developer',
+        'Software Engineer',
+        'Next.js Portfolio',
+        'React Developer',
+        'Node.js Developer',
+        'Express.js',
+        'Web Developer Portfolio',
+        'Bharat Express',
+        'MoodTunes',
+    ],
+    authors: [{ name: 'Utkarsh Rai', url: 'https://github.com/UTkarsh87020' }],
+    creator: 'Utkarsh Rai',
+    openGraph: {
+        type: 'website',
+        locale: 'en_US',
+        url: 'https://utkarshrai.devpro',
+        title: 'Utkarsh Rai | Full-Stack Software Engineer & Web Developer',
+        description:
+            'Explore selected full-stack projects, autonomous logistics telemetry, software engineering experience, and technical stack of Utkarsh Rai.',
+        siteName: 'Utkarsh Rai Portfolio',
+        images: [
+            {
+                url: '/og-image.png',
+                width: 1200,
+                height: 630,
+                alt: 'Utkarsh Rai - Full Stack Developer Portfolio',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Utkarsh Rai | Full-Stack Software Engineer & Web Developer',
+        description:
+            'Explore selected full-stack projects, autonomous logistics telemetry, software engineering experience, and technical stack of Utkarsh Rai.',
+        images: ['/og-image.png'],
+        creator: '@UTkarsh87020',
+    },
+    icons: {
+        icon: [
+            { url: '/icon.svg', type: 'image/svg+xml' },
+            { url: '/favicon.ico', sizes: 'any' },
+        ],
+        apple: '/apple-icon.png',
+    },
 };
 
 export default function RootLayout({
