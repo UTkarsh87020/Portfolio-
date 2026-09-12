@@ -44,17 +44,21 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'FastTrack Delivery',
-        slug: 'fasttrack-delivery',
+        title: 'Bharat Express (भारत एक्सप्रेस)',
+        slug: 'bharat-express',
         year: 2026,
-        techStack: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'Express.js'],
-        thumbnail: '/projects/thumbnail/fasttrack-delivery.jpg',
-        longThumbnail: '/projects/long/fasttrack-delivery.jpg',
-        images: ['/projects/images/fasttrack-delivery-1.jpg'],
-        sourceCode: 'https://github.com/UTkarsh87020',
-        liveUrl: 'https://github.com/UTkarsh87020',
-        description: 'AI-powered smart logistics system with customer profiles, order lifecycle, driver assignment, real-time tracking, route optimization, and a live order-status dashboard.',
-        role: 'Architected and delivered the full-stack platform solo within 6 weeks. Engineered route optimization using Nearest Neighbor Heuristic, Time-Window Constraint Scheduling, and a custom Hybrid Model.',
+        techStack: ['Node.js', 'Express.js', 'Leaflet.js', 'ESRI Dark Canvas', 'JavaScript', 'HTML5/CSS3'],
+        thumbnail: '/projects/thumbnail/bharat-express.png',
+        longThumbnail: '/projects/long/bharat-express.png',
+        images: [
+            '/projects/images/bharat-express-1.png',
+            '/projects/images/bharat-express-2.png',
+            '/projects/images/bharat-express-3.png',
+        ],
+        sourceCode: 'https://github.com/UTkarsh87020/Bharat_Express',
+        liveUrl: 'https://github.com/UTkarsh87020/Bharat_Express',
+        description: 'Smart logistics control room and multi-city spatial telemetry hub featuring ESRI dark canvas cartography, multi-objective AI route optimization, customer safe-route locks, and 1-click Delhi Police SOS emergency dispatch.',
+        role: 'Architected and engineered the logistics control room. Implemented multi-objective AI route optimization (Nearest-Neighbor, EDF Time-Window, Monsoon Hazard K-Means), custom HTML5 Canvas hardware telemetry gauges, and responsive multi-device dispatch workflows.',
     },
     {
         title: 'MoodTunes — Music App',

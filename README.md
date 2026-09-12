@@ -39,11 +39,22 @@ Hi, I'm **Utkarsh Rai** — a Computer Science undergraduate who enjoys building
 
 ## ⭐ Featured Projects
 
-### 1. **FastTrack Delivery System**
-> AI-powered smart logistics platform with route optimization, customer order lifecycle management, driver dispatching, live tracking, and emergency route support.
-- **Repository**: [UTkarsh87020/FastTrack-Delivery](https://github.com/UTkarsh87020/FastTrack-Delivery)
-- **Tech Stack**: JavaScript (ES6+), Node.js, Express.js, HTML5/CSS3
-- **Highlights**: Nearest Neighbor Heuristic & Time-Window route optimization algorithms with interactive status dashboard.
+### 1. **Bharat Express (भारत एक्सप्रेस)**
+> Smart logistics control room and multi-city spatial telemetry hub with ESRI dark canvas cartography, AI-driven routing, and real-time fleet operations.
+
+<p align="center">
+  <img src="./public/projects/thumbnail/bharat-express.png" alt="Bharat Express Control Room Preview" width="100%" />
+</p>
+
+- **Repository**: [UTkarsh87020/Bharat_Express](https://github.com/UTkarsh87020/Bharat_Express)
+- **Tech Stack**: Node.js, Express.js, Leaflet.js, ESRI Dark Canvas, JavaScript (ES6+), HTML5/CSS3, REST APIs
+- **Key Highlights**:
+  - **Autonomous Multi-City Control Room**: Aerospace-grade telemetry dashboard with watermark-free ESRI Dark Canvas cartography across Delhi NCR, Mumbai, and Bengaluru hubs.
+  - **Hybrid AI Routing Engine**: Multi-objective heuristics (Nearest-Neighbor, EDF Time-Window, and Monsoon Hazard K-Means clustering) reducing delivery latency and fuel cost by up to 24.8%.
+  - **Customer Safe-Route Locks**: Waypoint constraint locks preventing couriers of high-value cargo from taking unlit alleys or hazardous shortcuts.
+  - **Hardware Telemetry Gauges**: Custom HTML5 Canvas radial speedometers, EV battery State-of-Charge (SoC) monitors, and neon throughput sparklines.
+  - **1-Click Emergency Police SOS**: Direct integration with Delhi Police (112) / PCR dispatch vector (`PCR-07`) and audible distress siren beacon.
+  - **Responsive Dispatch Ergonomics**: Zero-cutoff layout tuned for standard laptop resolutions (1366×768) and mobile-first slide-up telemetry sheets with 56px bottom navigation.
 
 ### 2. **MoodTunes — Mood-Based Music Streaming Web App**
 > Full-stack music streaming platform that analyzes user mood and sentiment from plain text using a localized NLP scoring engine to deliver dynamically matched soundtracks and real-time audio previews.
